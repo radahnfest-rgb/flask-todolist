@@ -39,7 +39,7 @@ jobs:
             --cov-report=term-missing \
             --cov-report=xml:coverage.xml
 
-            - name: Verify SonarQube token
+      - name: Verify SonarQube token
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
